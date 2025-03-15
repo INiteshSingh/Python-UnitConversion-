@@ -14,8 +14,8 @@ try:
     label.pack()
 #Label to display the current date and time in the GUI
     dateTime = dt.datetime.now() #datetime variable to get the current date and time when the gui is opened
-    datetimeLable = tk.Label(window,text=dateTime,font=("Arial",10),foreground="green",background="black")    
-    datetimeLable.palce(x=20,y=20)
+    datetimeLable = tk.Label(window,text=dateTime,font=("Arial",10),foreground="green")    
+    datetimeLable.pack(padx=10,pady=10)
 except:
     print("Something Went Wrong With Tkinter label Generation")
 
